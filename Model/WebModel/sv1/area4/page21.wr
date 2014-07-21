@@ -1,0 +1,133 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area4#page21" name="User HomePage" landmark="true" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <MultiMessageUnit id="sv1#area4#page21#mssu14" name="Welcome !!!" gr:x="0" gr:y="0">
+      <Message xml:space="preserve">Welcome To Travel Advisor !!!! &lt;/br&gt;
+All yours Travelling Problems Solutions will be Here.. &lt;/br&gt;
+Register Now!!!</Message>
+    </MultiMessageUnit>
+    <EntryUnit id="sv1#area4#page21#enu16" name="User Registration" linkOrder="sv1#area4#page21#enu16#ln47" gr:x="135" gr:y="5" entity="User" fieldOrder="sv1#area4#page21#enu16#fld60 sv1#area4#page21#enu16#fld61 sv1#area4#page21#enu16#fld62 sv1#area4#page21#enu16#fld63 sv1#area4#page21#enu16#fld64 sv1#area4#page21#enu16#sfld3">
+      <Link id="sv1#area4#page21#enu16#ln47" name="add User" to="sv1#cru1" type="normal" validate="true">
+        <LinkParameter id="sv1#area4#page21#enu16#ln47#par138" name="TAUser Object_TAUser Object" source="entityBean" target="sv1#cru1.entityBeans"/>
+        <LinkParameter id="sv1#area4#page21#enu16#ln47#par139" name="Email Address_email" source="sv1#area4#page21#enu16#fld64" target="sv1#cru1.email"/>
+        <LinkParameter id="sv1#area4#page21#enu16#ln47#par140" name="FirstName_firstName" source="sv1#area4#page21#enu16#fld62" target="sv1#cru1.User#att9"/>
+        <LinkParameter id="sv1#area4#page21#enu16#ln47#par141" name="LastName_lastName" source="sv1#area4#page21#enu16#fld63" target="sv1#cru1.User#att10"/>
+        <LinkParameter id="sv1#area4#page21#enu16#ln47#par142" name="Key [oid]_oid" source="key.userOID" target="sv1#cru1.userOID"/>
+        <LinkParameter id="sv1#area4#page21#enu16#ln47#par143" name="Password_password" source="sv1#area4#page21#enu16#fld61" target="sv1#cru1.password"/>
+        <LinkParameter id="sv1#area4#page21#enu16#ln47#par144" name="Role_role" source="sv1#area4#page21#enu16#sfld3" target="sv1#cru1.User#att8"/>
+        <LinkParameter id="sv1#area4#page21#enu16#ln47#par145" name="User Name_userName" source="sv1#area4#page21#enu16#fld60" target="sv1#cru1.userName"/>
+      </Link>
+      <Field id="sv1#area4#page21#enu16#fld60" name="username" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv1#area4#page21#enu16#fld61" name="password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv1#area4#page21#enu16#fld62" name="firstName" type="string" modifiable="true" attribute="User#att9"/>
+      <Field id="sv1#area4#page21#enu16#fld63" name="lastName" type="string" modifiable="true" attribute="User#att10"/>
+      <Field id="sv1#area4#page21#enu16#fld64" name="email" type="string" modifiable="true" attribute="email"/>
+      <SelectionField id="sv1#area4#page21#enu16#sfld3" name="role" type="string" modifiable="true" attribute="User#att8" splitOutput="false">
+        <Slot id="sv1#area4#page21#enu16#sfld3#slot4" name="User Roles" label="true" output="true" value="user"/>
+      </SelectionField>
+    </EntryUnit>
+    <EntryUnit gr:x="425" gr:y="80" id="sv1#area4#page21#enu19" name="Reviews !!!!" linkOrder="sv1#area4#page21#enu19#ln53">
+      <Link id="sv1#area4#page21#enu19#ln53" name="Give Reviews On The Routes You Travelled." to="sv1#area4#page23#pwu9" automaticCoupling="true" type="normal" validate="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid" layout:style="WebRatio" layout:frameLayout="Multiflex/Default" layout:fieldLayout="WRDefault/EntryUnit">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area4#page21#mssu14">
+          <layout:LayoutParameter name="contentType" value="text/html" type="unit"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area4#page21#enu16">
+          <layout:Link link="sv1#area4#page21#enu16#ln47"/>
+          <layout:Field field="sv1#area4#page21#enu16#fld60"/>
+          <layout:Field field="sv1#area4#page21#enu16#fld61"/>
+          <layout:Field field="sv1#area4#page21#enu16#fld62"/>
+          <layout:Field field="sv1#area4#page21#enu16#fld63"/>
+          <layout:Field field="sv1#area4#page21#enu16#fld64"/>
+          <layout:Field field="sv1#area4#page21#enu16#sfld3"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area4#page21#enu19">
+          <layout:Link link="sv1#area4#page21#enu19#ln53"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Page id="sv1#area4#page21#page24" name="Confirmation" gr:x="20" gr:y="105">
+    <ContentUnits>
+      <MultiMessageUnit id="sv1#area4#page21#page24#mssu17" name="User Registered Successfully!" gr:x="95" gr:y="0">
+        <Message xml:space="preserve">Sucessfully Registered.
+Congratulations.</Message>
+      </MultiMessageUnit>
+      <EntryUnit id="sv1#area4#page21#page24#enu17" name="Continue" linkOrder="sv1#area4#page21#page24#enu17#ln48" gr:x="0" gr:y="0">
+        <Link id="sv1#area4#page21#page24#enu17#ln48" name="Continue" to="sv1#area4#page21" type="normal" automaticCoupling="true" validate="true"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+</Page>

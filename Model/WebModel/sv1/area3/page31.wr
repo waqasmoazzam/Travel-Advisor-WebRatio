@@ -1,0 +1,122 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page31" name="Routes Management Page" landmark="true" gr:x="10" gr:y="430">
+  <ContentUnits>
+    <PowerIndexUnit id="sv1#area3#page31#pwu15" name="All Routes Till Date" linkOrder="sv1#area3#page31#pwu15#ln70 sv1#area3#page31#pwu15#ln71" gr:x="0" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att12 ent4#att18 ent4#att17 ent4#att16 ent4#att15 ent4#att2 ent4#att14 ent4#att13 ent4#att19 ent4#att20 ent4#att21">
+      <Link id="sv1#area3#page31#pwu15#ln70" name="update" to="sv1#area3#page31#seu7" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv1#area3#page31#pwu15#ln71" name="delete" to="sv1#area3#dlu7" type="normal" automaticCoupling="true" validate="true"/>
+    </PowerIndexUnit>
+    <EntryUnit id="sv1#area3#page31#enu22" name="Add Route" linkOrder="sv1#area3#page31#enu22#ln73" gr:x="165" gr:y="0" entity="ent4" fieldOrder="sv1#area3#page31#enu22#fld100 sv1#area3#page31#enu22#fld101 sv1#area3#page31#enu22#fld102 sv1#area3#page31#enu22#fld103 sv1#area3#page31#enu22#fld104 sv1#area3#page31#enu22#fld105 sv1#area3#page31#enu22#fld106 sv1#area3#page31#enu22#fld107 sv1#area3#page31#enu22#fld108 sv1#area3#page31#enu22#fld109 sv1#area3#page31#enu22#fld110">
+      <Link id="sv1#area3#page31#enu22#ln72" name="add User" to="sv1#area3#cru8" type="transport" validate="true">
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par209" name="User Object_User Object" source="entityBean" target="sv1#area3#cru8.entityBeans"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par237" name="destinationTemperature_destinationTemperature" source="sv1#area3#page31#enu22#fld106" target="sv1#area3#cru8.ent4#att14"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par238" name="flightDate_flightDate" source="sv1#area3#page31#enu22#fld104" target="sv1#area3#cru8.ent4#att15"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par239" name="from_from" source="sv1#area3#page31#enu22#fld101" target="sv1#area3#cru8.ent4#att18"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par240" name="fromImage_fromImage" source="sv1#area3#page31#enu22#fld109" target="sv1#area3#cru8.ent4#att20"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par241" name="packagePrice_packagePrice" source="sv1#area3#page31#enu22#fld103" target="sv1#area3#cru8.ent4#att16"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par242" name="routeId_routeId" source="sv1#area3#page31#enu22#fld100" target="sv1#area3#cru8.ent4#att12"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par243" name="timeDuration_timeDuration" source="sv1#area3#page31#enu22#fld107" target="sv1#area3#cru8.ent4#att13"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par244" name="to_to" source="sv1#area3#page31#enu22#fld102" target="sv1#area3#cru8.ent4#att17"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par245" name="toImage_toImage" source="sv1#area3#page31#enu22#fld110" target="sv1#area3#cru8.ent4#att21"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par246" name="userRatings_userRatings" source="sv1#area3#page31#enu22#fld108" target="sv1#area3#cru8.ent4#att19"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln72#par266" name="flightTime_flightTime" source="sv1#area3#page31#enu22#fld105" target="sv1#area3#cru8.ent4#att2"/>
+      </Link>
+      <Link id="sv1#area3#page31#enu22#ln73" name="save" to="sv1#area3#inn7" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv1#area3#page31#enu22#ln74" name="Flow16" to="sv1#area3#mfu7" type="transport" validate="true">
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par217" name="User Object_User Object" source="entityBean" target="sv1#area3#mfu7.entityBeans"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par228" name="destinationTemperature_destinationTemperature" source="sv1#area3#page31#enu22#fld106" target="sv1#area3#mfu7.ent4#att14"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par229" name="flightDate_flightDate" source="sv1#area3#page31#enu22#fld104" target="sv1#area3#mfu7.ent4#att15"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par230" name="from_from" source="sv1#area3#page31#enu22#fld101" target="sv1#area3#mfu7.ent4#att18"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par231" name="fromImage_fromImage" source="sv1#area3#page31#enu22#fld109" target="sv1#area3#mfu7.ent4#att20"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par232" name="packagePrice_packagePrice" source="sv1#area3#page31#enu22#fld103" target="sv1#area3#mfu7.ent4#att16"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par233" name="timeDuration_timeDuration" source="sv1#area3#page31#enu22#fld107" target="sv1#area3#mfu7.ent4#att13"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par234" name="to_to" source="sv1#area3#page31#enu22#fld102" target="sv1#area3#mfu7.ent4#att17"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par235" name="toImage_toImage" source="sv1#area3#page31#enu22#fld110" target="sv1#area3#mfu7.ent4#att21"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par236" name="userRatings_userRatings" source="sv1#area3#page31#enu22#fld108" target="sv1#area3#mfu7.ent4#att19"/>
+        <LinkParameter id="sv1#area3#page31#enu22#ln74#par265" name="flightTime_flightTime" source="sv1#area3#page31#enu22#fld105" target="sv1#area3#mfu7.ent4#att2"/>
+      </Link>
+      <Field id="sv1#area3#page31#enu22#fld100" name="routeId" type="integer" modifiable="true" attribute="ent4#att12"/>
+      <Field id="sv1#area3#page31#enu22#fld101" name="from" type="string" modifiable="true" attribute="ent4#att18"/>
+      <Field id="sv1#area3#page31#enu22#fld102" name="to" type="string" modifiable="true" attribute="ent4#att17"/>
+      <Field id="sv1#area3#page31#enu22#fld103" name="packagePrice" type="integer" modifiable="true" attribute="ent4#att16"/>
+      <Field id="sv1#area3#page31#enu22#fld104" name="flightDate" type="date" modifiable="true" attribute="ent4#att15"/>
+      <Field id="sv1#area3#page31#enu22#fld105" name="flightTime" type="time" modifiable="true" attribute="ent4#att2"/>
+      <Field id="sv1#area3#page31#enu22#fld106" name="destinationTemperature" type="string" modifiable="true" attribute="ent4#att14"/>
+      <Field id="sv1#area3#page31#enu22#fld107" name="timeDuration" type="float" modifiable="true" attribute="ent4#att13"/>
+      <Field id="sv1#area3#page31#enu22#fld108" name="userRatings" type="integer" modifiable="true" attribute="ent4#att19"/>
+      <Field id="sv1#area3#page31#enu22#fld109" name="fromImage" type="blob" modifiable="true" attribute="ent4#att20"/>
+      <Field id="sv1#area3#page31#enu22#fld110" name="toImage" type="blob" modifiable="true" attribute="ent4#att21"/>
+    </EntryUnit>
+    <SelectorUnit id="sv1#area3#page31#seu7" name="Route Details" gr:x="135" gr:y="145" entity="ent4" distinct="false">
+      <Selector id="sv1#area3#page31#seu7#su28" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area3#page31#seu7#su28#kcond20" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area3#page31#seu7#ln76" name="Flow14" to="sv1#area3#inn7" type="transport" validate="true">
+        <LinkParameter id="sv1#area3#page31#seu7#ln76#par227" name="oid_Input" source="ent4#att12Array" target="sv1#area3#inn7.isnotnull"/>
+      </Link>
+      <Link id="sv1#area3#page31#seu7#ln77" name="Flow18" to="sv1#area3#mfu7" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv1#area3#page31#seu7#ln79" name="Flow79" to="sv1#area3#page31#enu22" type="transport" validate="true">
+        <LinkParameter id="sv1#area3#page31#seu7#ln79#par250" name="routeId_Key Condition [routeId]" source="ent4#att12Array" target="sv1#area3#page31#enu22.ent4#att12"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid" layout:style="WebRatio" layout:frameLayout="Multiflex/Default" layout:fieldLayout="WRDefault/EntryUnit">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page31#pwu15">
+          <layout:Link link="sv1#area3#page31#pwu15#ln70"/>
+          <layout:Link link="sv1#area3#page31#pwu15#ln71"/>
+          <layout:Attribute attribute="ent4#att12"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att2"/>
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att13"/>
+          <layout:Attribute attribute="ent4#att19"/>
+          <layout:Attribute attribute="ent4#att20"/>
+          <layout:Attribute attribute="ent4#att21"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page31#enu22">
+          <layout:Link link="sv1#area3#page31#enu22#ln73"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld100"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld101"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld102"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld103"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld104"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld105"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld106"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld107"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld108"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld109"/>
+          <layout:Field field="sv1#area3#page31#enu22#fld110"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

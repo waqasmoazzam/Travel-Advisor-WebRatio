@@ -1,0 +1,67 @@
+<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="145" gr:y="300" id="sv1#mpage1" name="User Profile">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="70" id="sv1#mpage1#gtu1" name="Get Current User" contextParameters="UserCtxParam">
+      <Link id="sv1#mpage1#gtu1#ln26" name="Flow26" to="sv1#mpage1#dau1" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <DataUnit gr:x="25" gr:y="170" id="sv1#mpage1#dau1" name="User Details" entity="User" displayAttributes="userName" linkOrder="sv1#mpage1#dau1#ln28">
+      <Selector id="sv1#mpage1#dau1#su2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mpage1#dau1#su2#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#mpage1#dau1#ln28" name="Flow28" to="sv1#lou2" type="normal" validate="true"/>
+      <Link id="sv1#mpage1#dau1#ln4" name="Flow4" to="sv1#stu1" type="transport" validate="true">
+        <LinkParameter id="sv1#mpage1#dau1#ln4#par5" name="username_UserNameCtxParam" source="data.userName" target="sv1#stu1.ctx1"/>
+      </Link>
+    </DataUnit>
+    <MultiMessageUnit id="sv1#mpage1#mssu4" name="Login" gr:x="35" gr:y="0" customDescriptor="false" linkOrder="sv1#mpage1#mssu4#ln3">
+      <Message xml:space="preserve">.</Message>
+      <Link id="sv1#mpage1#mssu4#ln3" name="Login" to="sv1#page1#enu1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="100,151,100,-185" ajaxOpenWindow="true" ajaxWindowUseTitle="true" ajaxWindowTitle="Please Login !!!" ajaxWindowWidth="450" ajaxWindowHeight="250" ajaxWindowClosable="true" ajaxWindowModal="true" ajaxWindowShowEffect="Effect.Grow" ajaxWindowHideEffect="Effect.Shrink"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:CustomLocation name="User">
+    <layout:Grid containerType="cell">
+      <layout:Row>
+        <layout:Cell layout:style="WebRatio" layout:frameLayout="WRDefault/Empty">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="10"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell colspan="2">
+                <layout:Attribute unitId="sv1#mpage1#dau1" mode="full" attribute="userName">
+                  <layout:LayoutParameter name="label-position" value="left" type="attribute"/>
+                </layout:Attribute>
+              </layout:Cell>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="11"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell>
+                <layout:Unit unitId="sv1#mpage1#mssu4">
+                  <layout:Link link="sv1#mpage1#mssu4#ln3"/>
+                </layout:Unit>
+              </layout:Cell>
+            </layout:Row>
+          </layout:Grid>
+        </layout:Cell>
+      </layout:Row>
+    </layout:Grid>
+  </layout:CustomLocation>
+  <layout:ConditionalFieldVisibility xml:space="preserve">!= null
+</layout:ConditionalFieldVisibility></MasterPage>

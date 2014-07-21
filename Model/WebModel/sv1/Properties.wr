@@ -1,0 +1,29 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Public" landmarks="sv1#page6 sv1#area4 sv1#area3 sv1#lou2" homePage="sv1#page6">
+  <OperationUnits>
+    <CreateUnit gr:x="365" gr:y="5" id="sv1#cru1" name="Add User" entity="User" skipBlankRecords="false">
+      <OKLink id="sv1#cru1#oln17" name="OKFlow1" to="sv1#mlu1">
+        <LinkParameter id="sv1#cru1#oln17#par11" name="firstName_FirstName" source="User#att9Array" target="sv1#mlu1.FirstName"/>
+        <LinkParameter id="sv1#cru1#oln17#par12" name="lastName_LastName" source="User#att10Array" target="sv1#mlu1.LastName"/>
+        <LinkParameter id="sv1#cru1#oln17#par13" name="email_To" source="emailArray" target="sv1#mlu1.to"/>
+        <LinkParameter id="sv1#cru1#oln17#par14" name="noreply@traveladvisor.com_From" sourceValue="noreply@traveladvisor.com" target="sv1#mlu1.from"/>
+      </OKLink>
+      <KOLink id="sv1#cru1#kln2" name="KOFlow2" to="sv1#area3#page18"/>
+    </CreateUnit>
+    <NoOpOperationUnit id="sv1#opu2" name="Reset Search" gr:x="395" gr:y="455">
+      <OKLink id="sv1#opu2#oln3" name="OKLink13" to="sv1#page6#enu11" automaticCoupling="true" gr:bendpoints="-124,43,26,-61"/>
+    </NoOpOperationUnit>
+    <LogoutUnit gr:x="10" gr:y="455" id="sv1#lou2" name="Logout" siteView="sv1" landmark="true"/>
+    <SetUnit gr:x="-5" gr:y="340" id="sv1#stu1" name="set User Name" contextParameters="ctx1"/>
+    <ResetUnit gr:x="-15" gr:y="565" id="sv1#rstu1" name="reset user name" contextParameters="ctx1" linkOrder="sv1#rstu1#ln1">
+      <Link id="sv1#rstu1#ln1" name="Flow1" to="sv1#lou2" type="transport" validate="true"/>
+    </ResetUnit>
+    <LoginUnit gr:x="380" gr:y="735" id="sv1#lgu2" name="Login2">
+      <OKLink id="sv1#lgu2#oln1" name="OKFlow1" to="sv1#page6"/>
+    </LoginUnit>
+    <MailUnit id="sv1#mlu1" name="Send ConfirmationEmail" gr:x="415" gr:y="210" format="html" template="WEB-INF/descr/confirmRegistrationEmail.xml.template" smtpServer="smtp2">
+      <SubjectTemplate xml:space="preserve"> Confirm of your registration from TravelAdvisor</SubjectTemplate>
+      <OKLink id="sv1#mlu1#oln2" name="OKFlow2" to="sv1#area4#page21#page24"/>
+      <KOLink id="sv1#mlu1#kln4" name="KOFlow4" to="sv1#area3#page18"/>
+    </MailUnit>
+  </OperationUnits>
+</SiteView>

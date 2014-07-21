@@ -1,0 +1,11 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="155" gr:y="170" id="mov2#opm3" name="Logout">
+  <OperationUnits>
+    <InputCollectorUnit id="mov2#opm3#icu3" name="Input Collector" gr:x="30" gr:y="60">
+      <OKLink id="mov2#opm3#icu3#oln5" name="OKFlow5" to="mov2#opm3#lou1" automaticCoupling="true"/>
+    </InputCollectorUnit>
+    <LogoutUnit gr:x="385" gr:y="65" id="mov2#opm3#lou1" name="Logout1" siteView="sv1">
+      <KOLink id="mov2#opm3#lou1#kln5" name="KOFlow5" to="mov2#opm3#kocu2" automaticCoupling="true"/>
+    </LogoutUnit>
+    <KOCollectorUnit gr:x="500" gr:y="60" id="mov2#opm3#kocu2" name="KO Port"/>
+  </OperationUnits>
+</OperationModule>

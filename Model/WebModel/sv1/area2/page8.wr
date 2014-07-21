@@ -1,0 +1,160 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area2#page8" name="Detailed Search Results" protected="false" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <PowerIndexUnit id="sv1#area2#page8#pwu5" name="Specific Travel Details" customDescriptor="false" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" distinct="false" blockFactor="10" blockWindow="1" entity="ent4" displayAttributes="ent4#att18 ent4#att17 ent4#att16 ent4#att15 ent4#att2 ent4#att14 ent4#att13 ent4#att19">
+      <Selector id="sv1#area2#page8#pwu5#su5" defaultPolicy="fill" booleanOperator="or" expression="sv1#area2#page8#pwu5#su5#acond5 AND sv1#area2#page8#pwu5#su5#acond6 AND sv1#area2#page8#pwu5#su5#acond12 AND sv1#area2#page8#pwu5#su5#acond13">
+        <AttributesCondition id="sv1#area2#page8#pwu5#su5#acond5" name="from" predicate="contains" booleanOperator="and" implied="true" ignoreCase="true" attributes="ent4#att18"/>
+        <AttributesCondition id="sv1#area2#page8#pwu5#su5#acond6" name="to" predicate="contains" booleanOperator="and" implied="true" attributes="ent4#att17" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area2#page8#pwu5#su5#acond12" name="price from" predicate="gteq" booleanOperator="or" implied="false" attributes="ent4#att16"/>
+        <AttributesCondition id="sv1#area2#page8#pwu5#su5#acond13" name="price to" predicate="lteq" booleanOperator="or" implied="false" attributes="ent4#att16"/>
+      </Selector>
+      <VRules>
+        <CheckedUnitItemsValidationRule id="sv1#area2#page8#pwu5#ckd1" name="Validate Items Number" predicate="min" itemCount="1"/>
+      </VRules>
+      <SortAttribute attribute="ent4#att15" order="ascending"/>
+    </PowerIndexUnit>
+    <PowerIndexUnit id="sv1#area2#page8#pwu6" name="Related Travel Details" customDescriptor="false" gr:x="0" gr:y="130" sortable="true" checkable="false" useCountQuery="false" distinct="false" blockFactor="10" blockWindow="1" entity="ent4" displayAttributes="ent4#att18 ent4#att17 ent4#att16 ent4#att15 ent4#att2 ent4#att14 ent4#att13 ent4#att19">
+      <Selector id="sv1#area2#page8#pwu6#su6" defaultPolicy="fill" booleanOperator="or" expression="sv1#area2#page8#pwu6#su6#acond7 OR sv1#area2#page8#pwu6#su6#acond8 OR sv1#area2#page8#pwu6#su6#acond14 OR sv1#area2#page8#pwu6#su6#acond15">
+        <AttributesCondition id="sv1#area2#page8#pwu6#su6#acond7" name="from" predicate="contains" booleanOperator="and" implied="true" ignoreCase="true" attributes="ent4#att18"/>
+        <AttributesCondition id="sv1#area2#page8#pwu6#su6#acond8" name="to" predicate="contains" booleanOperator="and" implied="true" attributes="ent4#att17" ignoreCase="true"/>
+      </Selector>
+      <VRules>
+        <CheckedUnitItemsValidationRule id="sv1#area2#page8#pwu6#ckd2" name="Validate Items Number" predicate="min" itemCount="1"/>
+      </VRules>
+      <SortAttribute attribute="ent4#att15" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid layout:style="WebRatio" layout:frameLayout="WebRatio/Basic">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12" rowspan="2">
+        <layout:Unit unitId="sv1#area2#page8#pwu5" layout:frameLayout="WRDefault/Empty">
+          <layout:Link link="sv1#area2#page8#pwu5ent4#att15"/>
+          <layout:Link link="sv1#area2#page8#pwu5First"/>
+          <layout:Link link="sv1#area2#page8#pwu5Previous"/>
+          <layout:Link link="sv1#area2#page8#pwu5Block"/>
+          <layout:Link link="sv1#area2#page8#pwu5Next"/>
+          <layout:Link link="sv1#area2#page8#pwu5Last"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att2"/>
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att13"/>
+          <layout:Attribute attribute="ent4#att19"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12" rowspan="2">
+        <layout:Unit unitId="sv1#area2#page8#pwu6" layout:frameLayout="WRDefault/Default">
+          <layout:Link link="sv1#area2#page8#pwu6ent4#att15"/>
+          <layout:Link link="sv1#area2#page8#pwu6First"/>
+          <layout:Link link="sv1#area2#page8#pwu6Previous"/>
+          <layout:Link link="sv1#area2#page8#pwu6Block"/>
+          <layout:Link link="sv1#area2#page8#pwu6Next"/>
+          <layout:Link link="sv1#area2#page8#pwu6Last"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att2"/>
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att13"/>
+          <layout:Attribute attribute="ent4#att19"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

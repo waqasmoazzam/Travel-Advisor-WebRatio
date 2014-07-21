@@ -1,0 +1,133 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area2#page25" name="Search By Date Results" protected="false" gr:x="0" gr:y="280">
+  <ContentUnits>
+    <PowerIndexUnit id="sv1#area2#page25#pwu12" name="Related Travel Details" customDescriptor="false" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" distinct="false" blockFactor="10" blockWindow="1" entity="ent4" displayAttributes="ent4#att18 ent4#att17 ent4#att16 ent4#att15 ent4#att2 ent4#att14 ent4#att13 ent4#att19">
+      <Selector id="sv1#area2#page25#pwu12#su19" defaultPolicy="fill" booleanOperator="or" expression="sv1#area2#page25#pwu12#su19#acond10 AND sv1#area2#page25#pwu12#su19#acond11 AND sv1#area2#page25#pwu12#su19#acond19 AND sv1#area2#page25#pwu12#su19#acond18">
+        <AttributesCondition id="sv1#area2#page25#pwu12#su19#acond10" name="from" predicate="contains" booleanOperator="and" implied="true" ignoreCase="true" attributes="ent4#att18"/>
+        <AttributesCondition id="sv1#area2#page25#pwu12#su19#acond11" name="to" predicate="contains" booleanOperator="and" implied="true" attributes="ent4#att17" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area2#page25#pwu12#su19#acond18" name="date from" predicate="gteq" booleanOperator="and" implied="false" attributes="ent4#att15"/>
+        <AttributesCondition id="sv1#area2#page25#pwu12#su19#acond19" name="date to" predicate="lteq" booleanOperator="and" implied="false" attributes="ent4#att15"/>
+      </Selector>
+      <VRules>
+        <CheckedUnitItemsValidationRule id="sv1#area2#page25#pwu12#ckd5" name="Validate Items Number" predicate="min" itemCount="1"/>
+      </VRules>
+      <SortAttribute attribute="ent4#att15" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid layout:style="WebRatio">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page25#pwu12">
+          <layout:Link link="sv1#area2#page25#pwu12ent4#att15"/>
+          <layout:Link link="sv1#area2#page25#pwu12First"/>
+          <layout:Link link="sv1#area2#page25#pwu12Previous"/>
+          <layout:Link link="sv1#area2#page25#pwu12Block"/>
+          <layout:Link link="sv1#area2#page25#pwu12Next"/>
+          <layout:Link link="sv1#area2#page25#pwu12Last"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att2"/>
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Attribute attribute="ent4#att13"/>
+          <layout:Attribute attribute="ent4#att19"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

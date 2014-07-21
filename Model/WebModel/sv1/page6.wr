@@ -1,0 +1,210 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="355" gr:y="305" id="sv1#page6" name="MainPage" landmark="true" ignoreMasterPage="false">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv1#page6#pwu2" name="Popular Destinations" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att18 ent4#att17 ent4#att16 ent4#att15 ent4#att2">
+      <DefaultSortAttribute attribute="ent4#att19" order="descending"/>
+    </PowerIndexUnit>
+    <EntryUnit id="sv1#page6#enu11" name="Specific Search" linkOrder="sv1#page6#enu11#ln15 sv1#page6#enu11#ln17" gr:x="175" gr:y="5" fieldOrder="sv1#page6#enu11#fld30 sv1#page6#enu11#fld28 sv1#page6#enu11#fld29 sv1#page6#enu11#fld67 sv1#page6#enu11#fld68" entity="ent4" ajaxTooltipEnabled="false">
+      <Link id="sv1#page6#enu11#ln15" name="Search" to="sv1#area2#page8#pwu5" type="normal" validate="true">
+        <LinkParameter id="sv1#page6#enu11#ln15#par8" name="Name" source="sv1#page6#enu11#fld30" target="sv1#area2#page8#pwu5#su5#acond5"/>
+        <LinkParameter id="sv1#page6#enu11#ln15#par16" name="Price" source="sv1#page6#enu11#fld28" target="sv1#area2#page8#pwu5#su5#acond6"/>
+        <LinkParameter id="sv1#page6#enu11#ln15#par151" name="Price Range From_price from" source="sv1#page6#enu11#fld67" target="sv1#area2#page8#pwu5#su5#acond12"/>
+        <LinkParameter id="sv1#page6#enu11#ln15#par152" name="Price Range To_price to" source="sv1#page6#enu11#fld68" target="sv1#area2#page8#pwu5#su5#acond13"/>
+      </Link>
+      <Field id="sv1#page6#enu11#fld28" name="Traveling To" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu11#fld29" name="Departure Date" type="date" modifiable="true" preloaded="true">
+        <Comment xml:space="preserve">mm/dd/yyyy</Comment>
+      </Field>
+      <Field id="sv1#page6#enu11#fld30" name="Traveling From" type="string" modifiable="true"/>
+      <Link id="sv1#page6#enu11#ln17" name="Reset" to="sv1#opu2" type="normal" validate="true" gr:bendpoints="-92,60,94,-14"/>
+      <Field id="sv1#page6#enu11#fld68" name="Price Range To" type="integer" modifiable="true"/>
+      <Field id="sv1#page6#enu11#fld67" name="Price Range From" type="integer" modifiable="true"/>
+    </EntryUnit>
+    <EntryUnit gr:x="175" gr:y="100" id="sv1#page6#enu5" name="Search By Date" entity="ent4" fieldOrder="sv1#page6#enu5#fld12 sv1#page6#enu5#fld13 sv1#page6#enu5#fld8 sv1#page6#enu5#fld9" linkOrder="sv1#page6#enu5#ln80">
+      <Field id="sv1#page6#enu5#fld9" name="To Date" type="date" modifiable="true"/>
+      <Field id="sv1#page6#enu5#fld8" name="From Date" type="date" modifiable="true" preloaded="true"/>
+      <Field id="sv1#page6#enu5#fld13" name="Travelling To" type="string" modifiable="true"/>
+      <Field id="sv1#page6#enu5#fld12" name="Travelling From" type="string" modifiable="true"/>
+      <Link id="sv1#page6#enu5#ln80" name="Search" to="sv1#area2#page25#pwu12" type="normal" validate="true">
+        <LinkParameter id="sv1#page6#enu5#ln80#par267" name="Key [routeId]_current routeId" source="key.ent4#att12" target="sv1#area2#page25#pwu12.current.ent4#att12"/>
+        <LinkParameter id="sv1#page6#enu5#ln80#par268" name="From Date_date from" source="sv1#page6#enu5#fld8" target="sv1#area2#page25#pwu12#su19#acond18"/>
+        <LinkParameter id="sv1#page6#enu5#ln80#par269" name="To Date_date to" source="sv1#page6#enu5#fld9" target="sv1#area2#page25#pwu12#su19#acond19"/>
+        <LinkParameter id="sv1#page6#enu5#ln80#par270" name="Travelling From_from" source="sv1#page6#enu5#fld12" target="sv1#area2#page25#pwu12#su19#acond10"/>
+        <LinkParameter id="sv1#page6#enu5#ln80#par271" name="Travelling To_to" source="sv1#page6#enu5#fld13" target="sv1#area2#page25#pwu12#su19#acond11"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit gr:x="175" gr:y="200" id="sv1#page6#enu18" name="Search By City" fieldOrder="sv1#page6#enu18#fld66" linkOrder="sv1#page6#enu18#ln81">
+      <Field id="sv1#page6#enu18#fld66" name="Enter City to Search" type="string" modifiable="true"/>
+      <Link id="sv1#page6#enu18#ln81" name="Search" to="sv1#area2#page32#pwu16" type="normal" validate="true">
+        <LinkParameter id="sv1#page6#enu18#ln81#par255" name="Enter City to Search_from" source="sv1#page6#enu18#fld66" target="sv1#area2#page32#pwu16#su29#acond16"/>
+        <LinkParameter id="sv1#page6#enu18#ln81#par256" name="Enter City to Search_to" source="sv1#page6#enu18#fld66" target="sv1#area2#page32#pwu16#su29#acond17"/>
+      </Link>
+    </EntryUnit>
+    <TimeUnit gr:x="10" gr:y="200" id="sv1#page6#tmu1" name="current date">
+      <Link id="sv1#page6#tmu1#ln82" name="Flow82" to="sv1#page6#enu5" type="transport" validate="true">
+        <LinkParameter id="sv1#page6#tmu1#ln82#par262" name="Current/Input Timestamp_PASSING" source="currentTimestamp" passing="true"/>
+        <LinkParameter id="sv1#page6#tmu1#ln82#par263" name="Current/Input Timestamp_From Date" source="currentDate" target="sv1#page6#enu5#fld8_slot"/>
+      </Link>
+      <Link id="sv1#page6#tmu1#ln83" name="Flow83" to="sv1#page6#enu11" type="transport" validate="true">
+        <LinkParameter id="sv1#page6#tmu1#ln83#par264" name="Current/Input Timestamp_Departure Date" source="currentDate" target="sv1#page6#enu11#fld29_slot"/>
+      </Link>
+    </TimeUnit>
+    <MultiMessageUnit id="sv1#page6#mssu1" name="Welcome !!!" gr:x="85" gr:y="270">
+      <Message xml:space="preserve">&lt;h1&gt;Welcome To Travel Advisor !!!! &lt;/br&gt;&lt;/h1&gt;
+&lt;h2&gt;All yours Travelling Problems Solutions will be Here.. &lt;/br&gt;&lt;/h2&gt;
+&lt;h3&gt;Register and Get Informed and Updated.. Today !!!! &lt;/h3&gt;</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid" layout:style="WebRatio" layout:fieldLayout="WRDefault/EntryUnit" layout:frameLayout="WebRatio/Basic">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page6#mssu1">
+          <layout:LayoutParameter name="contentType" value="text/html" type="unit"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="6" rowspan="2">
+        <layout:Unit unitId="sv1#page6#pwu2" layout:frameLayout="WRDefault/Empty">
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att15"/>
+          <layout:Attribute attribute="ent4#att2"/>
+          <layout:LayoutParameter name="titlefont-weight" value="bold" type="frame"/>
+          <layout:LayoutParameter name="titleborder-style" value="THIN" type="frame"/>
+          <layout:LayoutParameter name="label-width" value="20ex" type="attribute"/>
+          <layout:LayoutParameter name="icon-padding" value="25px" type="link"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell colspan="4">
+        <layout:Unit unitId="sv1#page6#enu18" layout:frameLayout="Multiflex/FieldSet">
+          <layout:Field field="sv1#page6#enu18#fld66"/>
+          <layout:Link link="sv1#page6#enu18#ln81"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell colspan="2"/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell colspan="6"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="6">
+        <layout:Unit unitId="sv1#page6#enu11" layout:frameLayout="Multiflex/FieldSet">
+          <layout:Link link="sv1#page6#enu11#ln15"/>
+          <layout:Link link="sv1#page6#enu11#ln17"/>
+          <layout:Field field="sv1#page6#enu11#fld30"/>
+          <layout:Field field="sv1#page6#enu11#fld28"/>
+          <layout:Field field="sv1#page6#enu11#fld29"/>
+          <layout:Field field="sv1#page6#enu11#fld67"/>
+          <layout:Field field="sv1#page6#enu11#fld68"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell colspan="6">
+        <layout:Unit unitId="sv1#page6#enu5" layout:frameLayout="Multiflex/FieldSet">
+          <layout:Field field="sv1#page6#enu5#fld12"/>
+          <layout:Field field="sv1#page6#enu5#fld13"/>
+          <layout:Field field="sv1#page6#enu5#fld8"/>
+          <layout:Field field="sv1#page6#enu5#fld9"/>
+          <layout:Link link="sv1#page6#enu5#ln80"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

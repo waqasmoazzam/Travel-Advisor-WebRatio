@@ -1,0 +1,41 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="145" gr:y="625" id="sv1#page1" name="Please Login!!" ignoreMasterPage="true" layout:pageLayout="WRDefault/Empty" layout:frameLayout="Multiflex/FieldSet" layout:loginPage="WebRatio/Default" layout:fieldLayout="WRDefault/EntryUnit">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#page1#enu1" name="Enter Information" entity="User" linkOrder="sv1#page1#enu1#ln2">
+      <Field id="sv1#page1#enu1#fld1" name="username" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv1#page1#enu1#fld2" name="password" type="password" modifiable="true" attribute="password"/>
+      <Link id="sv1#page1#enu1#ln2" name="Login " to="sv1#lgu2" type="normal" validate="true">
+        <LinkParameter id="sv1#page1#enu1#ln2#par3" name="username_Username" source="sv1#page1#enu1#fld1" target="sv1#lgu2.username"/>
+        <LinkParameter id="sv1#page1#enu1#ln2#par4" name="password_Password" source="sv1#page1#enu1#fld2" target="sv1#lgu2.password"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid" layout:style="Reports" layout:frameLayout="WRDefault/Empty" layout:fieldLayout="WRDefault/EntryUnit">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#enu1" layout:style="WebRatio" layout:frameLayout="Multiflex/FieldSet" layout:unitLayout="WRDefault/Simple" layout:fieldLayout="WRDefault/EntryUnit">
+          <layout:Field field="sv1#page1#enu1#fld1"/>
+          <layout:Field field="sv1#page1#enu1#fld2"/>
+          <layout:Link link="sv1#page1#enu1#ln2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <layout:CustomLocation name="User">
+    <layout:Grid containerType="cell">
+      <layout:Row>
+        <layout:Cell layout:style="WRDefault" layout:frameLayout="WRDefault/Empty" layout:fieldLayout="WRDefault/FieldValue"/>
+      </layout:Row>
+    </layout:Grid>
+  </layout:CustomLocation>
+</Page>

@@ -1,0 +1,26 @@
+[12 May 2014 09:00:54] DEBUG Executing SQL script
+[12 May 2014 09:00:54] INFO ================================================================================
+[12 May 2014 09:00:54] INFO outputPath= '/Users/djlophu/Documents/WebRation Projects/TravelAdvisorG2/.Temp~/UpdateSQL.xml'
+[12 May 2014 09:00:54] INFO onError= 'stop'
+[12 May 2014 09:00:54] INFO statementSeparator= ';'
+[12 May 2014 09:00:54] INFO derby.system.home= '/Users/djlophu/Documents/WebRation Projects/.metadata/.plugins/com.webratio.commons.db/derby'
+[12 May 2014 09:00:54] INFO password= ''
+[12 May 2014 09:00:54] INFO url= 'jdbc:mysql://localhost:3306/dbTA'
+[12 May 2014 09:00:54] INFO username= 'root'
+[12 May 2014 09:00:54] INFO autoCommit= 'false'
+[12 May 2014 09:00:54] INFO outputLogPath= '/Users/djlophu/Documents/WebRation Projects/TravelAdvisorG2/.Temp~/UpdateSQL.xml.log'
+[12 May 2014 09:00:54] INFO driverClass= 'com.mysql.jdbc.Driver'
+[12 May 2014 09:00:54] INFO encoding= ''
+[12 May 2014 09:00:54] INFO eventSocketPort= '50981'
+[12 May 2014 09:00:54] INFO sqlScript= '/Users/djlophu/Documents/WebRation Projects/TravelAdvisorG2/.Temp~/UpdateSQL.sql'
+[12 May 2014 09:00:54] INFO ================================================================================
+[12 May 2014 09:00:54] INFO Connecting to the Database...
+[12 May 2014 09:00:54] INFO Database connection estabilished
+[12 May 2014 09:00:54] INFO transaction isolation: 4
+[12 May 2014 09:00:54] DEBUG ================================================================================
+[12 May 2014 09:00:54] DEBUG Executing SQL script file: /Users/djlophu/Documents/WebRation Projects/TravelAdvisorG2/.Temp~/UpdateSQL.sql
+[12 May 2014 09:00:54] DEBUG Executing statement:  alter table `routeinformation`  add column  `flighttime`  time
+[12 May 2014 09:00:54] DEBUG ================================================================================
+[12 May 2014 09:00:54] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[12 May 2014 09:00:54] INFO Database connection closed
+[12 May 2014 09:00:54] DEBUG Total time: 350 milliseconds

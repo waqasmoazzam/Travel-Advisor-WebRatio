@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.EntryUnitService" name="Please Login!!">
+  <FormFields>
+    <Field id="fld10" name="User Name" type="string" localized="false"></Field>
+    <Field id="fld11" name="Password" type="password" localized="false"></Field>
+  </FormFields>
+  <wr:Validation xmlns:wr="http://www.webratio.com/2013/WebML/WRValidation">
+    <wr:ValidationLink elementId="enu6" linkId="ln8" action="validate"/>
+  </wr:Validation>
+</Descriptor>
